@@ -1,11 +1,4 @@
-<div style="display: flex; align-items: center;">
-    <div style="margin-right: 10px;">
-        <img src="images/icon.png" alt="Icon" style="width: 125px; height: 125px;">
-    </div>
-    <div>
-        <span style="font-size: 32px; font-weight: bold;">Image Search</span>
-    </div>
-</div>
+# ![Banner](images/banner.png)
 
 This extension allows you to search for images on Pixabay directly from within VS Code and download them to your workspace.
 
