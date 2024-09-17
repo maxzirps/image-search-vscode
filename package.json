@@ -5,6 +5,9 @@
     "email": "hello@maxzirps.at",
     "url": "https://maxzirps.at"
   },
+  "license": "MIT",
+  "pricing": "Free",
+  "icon": "images/icon.png",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/maxzirps/image-search-vscode.git"
@@ -23,17 +26,21 @@
   "contributes": {
     "commands": [
       {
-        "command": "image-search.setUnsplashAPIKey",
-        "title": "Image-Search: Set Unsplash API key"
+        "command": "image-search.setPixabayAPIKey",
+        "title": "Image-Search: Set Pixabay API key"
+      },
+      {
+        "command": "image-search.searchImage",
+        "title": "Image-Search: Search Image"
       }
     ],
     "configuration": {
       "title": "Image Search",
       "properties": {
-        "image-search.unsplashAPIKey": {
+        "image-search.pixabayAPIKey": {
           "type": "string",
           "default": "",
-          "description": "Your Unsplash API key for searching images."
+          "description": "Your Pixabay API key for searching images."
         }
       }
     }

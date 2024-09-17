@@ -1,71 +1,71 @@
-# image-search README
+<div style="display: flex; align-items: center;">
+    <div style="margin-right: 10px;">
+        <img src="images/icon.png" alt="Icon" style="width: 125px; height: 125px;">
+    </div>
+    <div>
+        <span style="font-size: 32px; font-weight: bold;">Image Search</span>
+    </div>
+</div>
 
-This is the README for your extension "image-search". After writing up a brief description, we recommend including the following sections.
+This extension allows you to search for images on Pixabay directly from within VS Code and download them to your workspace.
+
+While the preview images are low resolution, the downloaded images are medium sized.
+
+Using the [Pixabay API](https://pixabay.com/api/)
+
+Check their [Content license](https://pixabay.com/service/terms/)
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- **Search Images**: Enter a description to search for images on Pixabay.
+- **View Results**: Display search results with thumbnails in a webview.
+- **Download Images**: Click on an image to download it directly to your workspace.
 
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+![Feature Screenshot](images/feature.gif)
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+- **VS Code**: Ensure you are using the latest version of Visual Studio Code.
+- **Internet Connection**: Required to fetch images from the Pixabay API.
 
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+This extension uses the following settings:
 
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+- `image-search.pixabayAPIKey`: Your Pixabay API key for accessing image search functionality. You can set this using the command `Image Search: Set Pixabay API Key`.
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+- **No Workspace Folder Open**: If no workspace folder is open, the extension will not be able to save downloaded images.
+- **API Key Required**: The extension requires a valid Pixabay API key. Ensure you set it before attempting to search for images.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+### 0.0.1
 
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+Still working on it
 
 ---
 
-## Following extension guidelines
+## Following Extension Guidelines
 
-Ensure that you've read through the extensions guidelines and follow the best practices for creating your extension.
-
-* [Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines)
+Ensure that you follow the [Visual Studio Code extension guidelines](https://code.visualstudio.com/api/references/extension-guidelines) for creating and publishing extensions.
 
 ## Working with Markdown
 
 You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
+- **Split Editor**: `Cmd+\` on macOS or `Ctrl+\` on Windows and Linux.
+- **Toggle Preview**: `Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux.
+- **Markdown Snippets**: Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
 
-## For more information
+## For More Information
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+- [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
+- [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
-**Enjoy!**
+**Enjoy your image searches!**
+
+### Icon
+
+Icon generated with Microsoft Bing ∙ 17 September 2024 at 8:55 pm
