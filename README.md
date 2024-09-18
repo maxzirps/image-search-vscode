@@ -29,6 +29,8 @@ This extension uses the following settings:
 
 ## Known Issues
 
+- **Needs caching**
+- **Needs Testing**
 - **No Workspace Folder Open**: If no workspace folder is open, the extension will not be able to save downloaded images.
 - **API Key Required**: The extension requires a valid Pixabay API key. Ensure you set it before attempting to search for images.
 
@@ -39,25 +41,6 @@ This extension uses the following settings:
 Still working on it
 
 ---
-
-## Following Extension Guidelines
-
-Ensure that you follow the [Visual Studio Code extension guidelines](https://code.visualstudio.com/api/references/extension-guidelines) for creating and publishing extensions.
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-- **Split Editor**: `Cmd+\` on macOS or `Ctrl+\` on Windows and Linux.
-- **Toggle Preview**: `Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux.
-- **Markdown Snippets**: Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For More Information
-
-- [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-- [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy your image searches!**
 
 ### Icon
 

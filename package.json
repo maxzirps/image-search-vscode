@@ -8,6 +8,7 @@
   "license": "MIT",
   "pricing": "Free",
   "icon": "images/icon.png",
+  "publisher": "maxzirps",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/maxzirps/image-search-vscode.git"
@@ -15,11 +16,22 @@
   "displayName": "Image Search",
   "description": "Search the web for stock images",
   "version": "0.0.1",
+  "preview": true,
+  "galleryBanner": {
+    "theme": "light"
+  },
   "engines": {
     "vscode": "^1.93.0"
   },
   "categories": [
     "Other"
+  ],
+  "keywords": [
+    "image search",
+    "stock image",
+    "pixabay",
+    "web image search",
+    "image download"
   ],
   "activationEvents": [],
   "main": "./dist/extension.js",
