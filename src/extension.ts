@@ -42,9 +42,13 @@ export function activate(context: vscode.ExtensionContext) {
         .getConfiguration("image-search")
         .get("pixabayAPIKey");
       if (!apiKey) {
-        vscode.window.showErrorMessage(
-          "Please set an API-Key first. Use 'Image-Search: Set Pixabay API key' command."
-        );
+        vscode.window
+          .showErrorMessage("Please set an API-Key first.", "Set API Key")
+          .then((selection) => {
+            if (selection === "Set API Key") {
+              vscode.commands.executeCommand("image-search.setPixabayAPIKey");
+            }
+          });
         return;
       }
 

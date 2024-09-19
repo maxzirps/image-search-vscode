@@ -1,20 +1,14 @@
 # ![Banner](images/banner.png)
 
-This extension allows you to search for images on Pixabay directly from within VS Code and download them to your workspace.
+Search and download images from Pixabay directly in VS Code
 
-While the preview images are low resolution, the downloaded images are medium sized.
+![Feature Screenshot](images/feature.gif)
 
 Using the [Pixabay API](https://pixabay.com/api/)
 
 Check their [Content license](https://pixabay.com/service/terms/)
 
-## Features
-
-- **Search Images**: Enter a description to search for images on Pixabay.
-- **View Results**: Display search results with thumbnails in a webview.
-- **Download Images**: Click on an image to download it directly to your workspace.
-
-![Feature Screenshot](images/feature.gif)
+While the preview images are low resolution, the downloaded images are medium sized, ready for web development.
 
 ## Requirements
 
@@ -22,8 +16,6 @@ Check their [Content license](https://pixabay.com/service/terms/)
 - **Internet Connection**: Required to fetch images from the Pixabay API.
 
 ## Extension Settings
-
-This extension uses the following settings:
 
 - `image-search.pixabayAPIKey`: Your Pixabay API key for accessing image search functionality. You can set this using the command `Image Search: Set Pixabay API Key`.
 
