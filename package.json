@@ -14,9 +14,8 @@
     "url": "git+https://github.com/maxzirps/image-search-vscode.git"
   },
   "displayName": "Image Search",
-  "description": "Search the web for stock images",
-  "version": "0.0.1",
-  "preview": true,
+  "description": "Search and download stock images from pixabay.com",
+  "version": "1.0.0",
   "galleryBanner": {
     "theme": "light"
   },
@@ -42,6 +41,10 @@
         "title": "Image-Search: Set Pixabay API key"
       },
       {
+        "command": "image-search.setImageResolution",
+        "title": "Image-Search: Set resolution of downloaded images"
+      },
+      {
         "command": "image-search.searchImage",
         "title": "Image-Search: Search Image"
       }
@@ -53,6 +56,23 @@
           "type": "string",
           "default": "",
           "description": "Your Pixabay API key for searching images."
+        },
+        "image-search.downloadedImageResolution": {
+          "type": "string",
+          "enum": [
+            "webformat",
+            "largeImage",
+            "fullHD",
+            "image"
+          ],
+          "default": "webformat",
+          "description": "You can choose between 4 pre-redfined resolutions. FullHD and Image only work if your account has been approved for full access. Check their website for more information. ",
+          "enumDescriptions": [
+            "Medium sized image with a maximum width or height of 640 px (webformatWidth x webformatHeight).",
+            "Scaled image with a maximum width/height of 1280px.",
+            "Full HD scaled image with a maximum width/height of 1920px.",
+            "URL to the original image (imageWidth x imageHeight)."
+          ]
         }
       }
     }
@@ -69,17 +89,16 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.93.0",
-    "@types/mocha": "^10.0.7",
     "@types/node": "20.x",
+    "@types/vscode": "^1.93.0",
     "@typescript-eslint/eslint-plugin": "^8.3.0",
     "@typescript-eslint/parser": "^8.3.0",
-    "eslint": "^9.9.1",
-    "typescript": "^5.5.4",
-    "ts-loader": "^9.5.1",
-    "webpack": "^5.94.0",
-    "webpack-cli": "^5.1.4",
     "@vscode/test-cli": "^0.0.10",
-    "@vscode/test-electron": "^2.4.1"
+    "@vscode/test-electron": "^2.4.1",
+    "eslint": "^9.9.1",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.5.4",
+    "webpack": "^5.94.0",
+    "webpack-cli": "^5.1.4"
   }
 }
